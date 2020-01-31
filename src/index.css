@@ -1,13 +1,58 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e3f2fd;
+  margin-bottom: 10%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#form-container {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#uploadFormArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgb(37, 166, 154);
+  padding: 10%;
+  border-style: dashed;
+}
+
+#fileName {
+  min-height: 10%;
+  padding: 2%;
+}
+
+#no-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+button,
+.upload {
+  width: 100%;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  width: 50%;
+}
+
+.fileIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  #form-container {
+    max-width: 100%;
+  }
 }
