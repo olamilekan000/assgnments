@@ -38,7 +38,6 @@ const AuthContextProvider = props => {
       }
     });
     setUserDetails({});
-
     HoldOn.close();
   };
 
